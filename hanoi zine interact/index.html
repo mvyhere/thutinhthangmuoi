@@ -1,528 +1,509 @@
 <!doctype html>
 <html lang="vi">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#deddd7">
-  <title>Zine tương tác</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600;6..96,700&family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      color-scheme: light;
-      --ink: #1d1d1d;
-      --paper: #f5f2eb;
-      --paper-edge: #d4d0c8;
-      --muted: #77756f;
-      --blue: #293c8e;
-      --pink: #e54d9e;
-      --line: rgba(29, 29, 29, .18);
-      --sans: "DM Sans", "Helvetica Neue", sans-serif;
-      --serif: "Bodoni Moda", Georgia, serif;
-      --script: "Caveat", cursive;
-    }
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#deddd7">
+    <title>Thư tình tháng mười</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600;6..96,700&family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1d1d1d;
+        --paper: #f5f2eb;
+        --paper-edge: #d4d0c8;
+        --muted: #77756f;
+        --blue: #293c8e;
+        --pink: #e54d9e;
+        --line: rgba(29, 29, 29, .18);
+        --sans: "DM Sans", "Helvetica Neue", sans-serif;
+        --serif: "Bodoni Moda", Georgia, serif;
+        --script: "Caveat", cursive;
+      }
 
-    * { box-sizing: border-box; }
+      * { box-sizing: border-box; }
 
-    body {
-      min-width: 320px;
-      min-height: 100vh;
-      margin: 0;
-      color: var(--ink);
-      font-family: var(--sans);
-      background-color: #deddd7;
-      background-image: radial-gradient(rgba(45, 43, 39, .12) .55px, transparent .7px), linear-gradient(116deg, rgba(255,255,255,.24), transparent 52%);
-      background-size: 5px 5px, auto;
-    }
+      body {
+        min-width: 320px;
+        min-height: 100vh;
+        margin: 0;
+        color: var(--ink);
+        font-family: var(--sans);
+        background-color: #deddd7;
+        background-image: radial-gradient(rgba(45, 43, 39, .12) .55px, transparent .7px), linear-gradient(116deg, rgba(255,255,255,.24), transparent 52%);
+        background-size: 5px 5px, auto;
+      }
 
-    button { color: inherit; font: inherit; }
+      button { color: inherit; font: inherit; }
 
-    .topbar {
-      height: 76px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 clamp(18px, 4vw, 58px);
-      border-bottom: 1px solid var(--line);
-      background: rgba(238, 236, 229, .74);
-    }
+      .topbar {
+        height: 76px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 clamp(18px, 4vw, 58px);
+        border-bottom: 1px solid var(--line);
+        background: rgba(238, 236, 229, .74);
+      }
 
-    .brand { display: flex; align-items: center; gap: 11px; }
-    .brand-mark { width: 12px; height: 12px; border-radius: 50%; background: var(--pink); box-shadow: 5px 4px 0 var(--blue); }
-    .brand-name { font-family: var(--serif); font-size: 18px; font-weight: 600; line-height: 1; }
-    .brand-edition { margin-top: 5px; color: var(--muted); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
-    .topbar-note { color: #696760; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
+      .brand { display: flex; align-items: center; gap: 11px; }
+      .brand-mark { width: 12px; height: 12px; border-radius: 50%; background: var(--pink); box-shadow: 5px 4px 0 var(--blue); }
+      .brand-name { font-family: var(--serif); font-size: 18px; font-weight: 600; line-height: 1; }
+      .brand-edition { margin-top: 5px; color: var(--muted); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
+      .topbar-note { color: #696760; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
 
-    .studio {
-      width: min(1420px, 100%);
-      min-height: calc(100vh - 76px);
-      margin: 0 auto;
-      padding: clamp(18px, 3.2vh, 34px) clamp(16px, 3vw, 42px) 22px;
-      display: grid;
-      grid-template-columns: minmax(145px, 180px) minmax(0, 1fr) minmax(145px, 180px);
-      align-items: center;
-      gap: clamp(16px, 2.3vw, 36px);
-    }
+      .studio {
+        width: min(1420px, 100%);
+        min-height: calc(100vh - 76px);
+        margin: 0 auto;
+        padding: clamp(18px, 3.2vh, 34px) clamp(16px, 3vw, 42px) 22px;
+        display: grid;
+        grid-template-columns: minmax(145px, 180px) minmax(0, 1fr) minmax(145px, 180px);
+        align-items: center;
+        gap: clamp(16px, 2.3vw, 36px);
+      }
 
-    .rail { align-self: stretch; display: flex; flex-direction: column; justify-content: space-between; padding: 8px 0 18px; }
-    .rail-kicker, .rail-index, .control-label { color: var(--muted); font-size: 9px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
-    .rail-title { max-width: 170px; margin: 15px 0 10px; font-family: var(--serif); font-size: clamp(23px, 2.2vw, 33px); font-weight: 500; line-height: 1.06; }
-    .rail-copy { max-width: 158px; color: #64625d; font-size: 11px; line-height: 1.6; }
-    .rail-rule { width: 35px; height: 1px; margin: 19px 0; background: var(--pink); }
-    .rail-quote { max-width: 155px; color: var(--blue); font-family: var(--script); font-size: 24px; line-height: .95; transform: rotate(-5deg); }
-    .rail-index { display: flex; align-items: center; gap: 9px; }
-    .rail-index::before { width: 21px; height: 1px; background: var(--ink); content: ""; }
+      .rail { align-self: stretch; display: flex; flex-direction: column; justify-content: space-between; padding: 8px 0 18px; }
+      .rail-kicker, .rail-index, .control-label { color: var(--muted); font-size: 9px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+      .rail-title { max-width: 170px; margin: 15px 0 10px; font-family: var(--serif); font-size: clamp(23px, 2.2vw, 33px); font-weight: 500; line-height: 1.06; }
+      .rail-copy { max-width: 158px; color: #64625d; font-size: 11px; line-height: 1.6; }
+      .rail-rule { width: 35px; height: 1px; margin: 19px 0; background: var(--pink); }
+      .rail-quote { max-width: 155px; color: var(--blue); font-family: var(--script); font-size: 24px; line-height: .95; transform: rotate(-5deg); }
+      .rail-index { display: flex; align-items: center; gap: 9px; }
+      .rail-index::before { width: 21px; height: 1px; background: var(--ink); content: ""; }
 
-    .center-column { min-width: 0; }
-    .viewer-toolbar { min-height: 42px; display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 11px; }
-    .mode-tabs { display: flex; align-items: center; gap: 4px; padding: 3px; border: 1px solid rgba(29,29,29,.13); border-radius: 3px; background: rgba(250,249,245,.62); }
-    .mode-button, .tool-button, .page-button { min-height: 32px; border: 0; border-radius: 2px; background: transparent; cursor: pointer; transition: color .18s ease, background .18s ease, transform .18s ease; }
-    .mode-button { padding: 0 12px; color: #6c6a64; font-size: 10px; }
-    .mode-button[aria-pressed="true"] { color: #fff; background: var(--ink); }
-    .tool-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 0 11px; border: 1px solid rgba(29,29,29,.2); background: rgba(250,249,245,.7); font-size: 10px; }
-    .tool-button:hover, .page-button:hover { background: #fff; }
-    .tool-button:active, .page-button:active { transform: translateY(1px); }
-    .stage-wrap { position: relative; padding: 22px 22px 27px; border: 1px solid rgba(255,255,255,.72); background: rgba(246,245,240,.42); box-shadow: 0 12px 36px rgba(43, 41, 36, .06), inset 0 0 0 1px rgba(33,32,29,.04); }
-    .stage-wrap::before, .stage-wrap::after { position: absolute; z-index: 1; width: 7px; height: 7px; border-radius: 50%; background: rgba(41,60,142,.28); content: ""; }
-    .stage-wrap::before { top: 13px; left: 15px; }
-    .stage-wrap::after { right: 15px; bottom: 14px; background: rgba(229,77,158,.34); }
-    .stage { position: relative; width: 100%; aspect-ratio: 3508 / 2480; perspective: 1800px; }
-    .read-spread, .sheet-view { position: absolute; inset: 0; display: grid; transition: opacity .45s ease, transform .65s cubic-bezier(.2,.75,.22,1), visibility .45s; }
-    .read-spread { z-index: 2; grid-template-columns: 1fr 1fr; transform-origin: center; }
-    .sheet-view { z-index: 1; display: block; visibility: hidden; opacity: 0; transform: rotateX(5deg) scale(.84) translateY(4%); transform-origin: center; }
-    .sheet-art { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: contain; }
-    .sheet-cell { position: absolute; z-index: 2; width: 25%; height: 50%; padding: 0; border: 0; background: transparent; cursor: zoom-in; }
-    .sheet-cell:hover { background: rgba(255,255,255,.12); }
-    .stage[data-view="sheet"] .read-spread { visibility: hidden; opacity: 0; transform: scale(.82) rotateY(-5deg); pointer-events: none; }
-    .stage[data-view="sheet"] .sheet-view { z-index: 3; visibility: visible; opacity: 1; transform: rotateX(0) scale(1) translateY(0); }
-    .stage.is-unfolding .sheet-view .zine-page { animation: unfold-page .55s both; animation-delay: calc(var(--order) * 42ms); }
-    @keyframes unfold-page { from { opacity: .3; transform: rotateY(var(--fold-angle, -14deg)) scale(.9); } to { opacity: 1; transform: rotateY(0) scale(1); } }
+      .center-column { min-width: 0; }
+      .viewer-toolbar { min-height: 42px; display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 11px; }
+      .mode-tabs { display: flex; align-items: center; gap: 4px; padding: 3px; border: 1px solid rgba(29,29,29,.13); border-radius: 3px; background: rgba(250,249,245,.62); }
+      .mode-button, .tool-button, .page-button { min-height: 32px; border: 0; border-radius: 2px; background: transparent; cursor: pointer; transition: color .18s ease, background .18s ease, transform .18s ease; }
+      .mode-button { padding: 0 12px; color: #6c6a64; font-size: 10px; }
+      .mode-button[aria-pressed="true"] { color: #fff; background: var(--ink); }
+      .tool-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 0 11px; border: 1px solid rgba(29,29,29,.2); background: rgba(250,249,245,.7); font-size: 10px; }
+      .tool-button:hover, .page-button:hover { background: #fff; }
+      .tool-button:active, .page-button:active { transform: translateY(1px); }
+      .stage-wrap { position: relative; padding: 22px 22px 27px; border: 1px solid rgba(255,255,255,.72); background: rgba(246,245,240,.42); box-shadow: 0 12px 36px rgba(43, 41, 36, .06), inset 0 0 0 1px rgba(255,255,255,.3); }
+      .stage-wrap::before, .stage-wrap::after { position: absolute; z-index: 1; width: 7px; height: 7px; border-radius: 50%; background: rgba(41,60,142,.28); content: ""; }
+      .stage-wrap::before { top: 13px; left: 15px; }
+      .stage-wrap::after { right: 15px; bottom: 14px; background: rgba(229,77,158,.34); }
+      .stage { position: relative; width: 100%; aspect-ratio: 3508 / 2480; perspective: 1800px; }
+      .read-spread, .sheet-view { position: absolute; inset: 0; display: grid; transition: opacity .45s ease, transform .65s cubic-bezier(.2,.75,.22,1), visibility .45s; }
+      .read-spread { z-index: 2; grid-template-columns: 1fr 1fr; transform-origin: center; }
+      .sheet-view { z-index: 1; display: block; visibility: hidden; opacity: 0; transform: rotateX(5deg) scale(.84) translateY(4%); transform-origin: center; }
+      .sheet-art { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: contain; }
+      .sheet-cell { position: absolute; z-index: 2; width: 25%; height: 50%; padding: 0; border: 0; background: transparent; cursor: zoom-in; }
+      .sheet-cell:hover { background: rgba(255,255,255,.12); }
+      .stage[data-view="sheet"] .read-spread { visibility: hidden; opacity: 0; transform: scale(.82) rotateY(-5deg); pointer-events: none; }
+      .stage[data-view="sheet"] .sheet-view { z-index: 3; visibility: visible; opacity: 1; transform: rotateX(0) scale(1) translateY(0); }
+      .stage.is-unfolding .sheet-view .zine-page { animation: unfold-page .55s both; animation-delay: calc(var(--order) * 42ms); }
+      @keyframes unfold-page { from { opacity: .3; transform: rotateY(var(--fold-angle, -14deg)) scale(.9); } to { opacity: 1; transform: rotateY(0) scale(1); } }
 
-    .zine-page { position: relative; display: block; width: 100%; height: 100%; min-width: 0; overflow: hidden; padding: 0; border: 0; color: var(--ink); text-align: left; cursor: zoom-in; isolation: isolate; background-color: #f4f1ea; box-shadow: inset 0 0 0 1px rgba(0,0,0,.11); }
-    .zine-page::before { position: absolute; z-index: -1; inset: 0; background-image: url("zine.png"); background-repeat: no-repeat; background-position: var(--art-position); background-size: 400% 200%; content: ""; }
-    .zine-page.is-upside-down::before { transform: rotate(180deg); }
-    .zine-page::after { position: absolute; z-index: 4; inset: 0; border: 1px solid rgba(0,0,0,.08); content: ""; pointer-events: none; }
-    .read-spread .zine-page:first-child { box-shadow: inset -12px 0 17px -18px rgba(0,0,0,.8), 0 12px 27px rgba(0,0,0,.14); }
-    .read-spread .zine-page:last-child { box-shadow: inset 12px 0 17px -18px rgba(0,0,0,.8), 0 12px 27px rgba(0,0,0,.14); }
-    .zine-page:hover { z-index: 5; }
-    .zine-page { transition: filter .2s ease; }
-    .zine-page:hover { filter: brightness(.97); }
-    .page-turn-clone { position: absolute !important; z-index: 20 !important; margin: 0; transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none; box-shadow: 0 12px 28px rgba(0,0,0,.28); }
-    .page-fade-clone { position: absolute !important; z-index: 15 !important; margin: 0; pointer-events: none; }
-    .magnifier { position: absolute; z-index: 22; width: 210px; height: 210px; overflow: hidden; border: 3px solid #f6f5f1; border-radius: 50%; outline: 1px solid rgba(0,0,0,.45); background: #fff; box-shadow: 0 8px 26px rgba(0,0,0,.42); opacity: 0; pointer-events: none; transform: scale(.82); transition: opacity .12s ease, transform .12s ease; }
-    .magnifier.is-visible { opacity: 1; transform: scale(1); }
-    .magnifier canvas { display: block; width: 100%; height: 100%; }
-    @media (hover: hover) and (pointer: fine) { .zine-page { cursor: none; } }
+      .zine-page { position: relative; display: block; width: 100%; height: 100%; min-width: 0; overflow: hidden; padding: 0; border: 0; color: var(--ink); text-align: left; cursor: zoom-in; isolation: isolate; }
+      .zine-page::before { position: absolute; z-index: -1; inset: 0; background-image: url("zine.png"); background-repeat: no-repeat; background-position: var(--art-position); background-size: 400% 200%; content: ""; }
+      .zine-page.is-upside-down::before { transform: rotate(180deg); }
+      .zine-page::after { position: absolute; z-index: 4; inset: 0; border: 1px solid rgba(0,0,0,.08); content: ""; pointer-events: none; }
+      .read-spread .zine-page:first-child { box-shadow: inset -12px 0 17px -18px rgba(0,0,0,.8), 0 12px 27px rgba(0,0,0,.14); }
+      .read-spread .zine-page:last-child { box-shadow: inset 12px 0 17px -18px rgba(0,0,0,.8), 0 12px 27px rgba(0,0,0,.14); }
+      .zine-page:hover { z-index: 5; }
+      .zine-page { transition: filter .2s ease; }
+      .zine-page:hover { filter: brightness(.97); }
+      .page-turn-clone { position: absolute !important; z-index: 20 !important; margin: 0; transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none; box-shadow: 0 12px 28px rgba(0,0,0,.18); }
+      .page-fade-clone { position: absolute !important; z-index: 15 !important; margin: 0; pointer-events: none; }
+      .magnifier { position: absolute; z-index: 22; width: 210px; height: 210px; overflow: hidden; border: 3px solid #f6f5f1; border-radius: 50%; outline: 1px solid rgba(0,0,0,.45); background: rgba(255,255,255,.65); opacity: 0; transform: scale(.7); transition: opacity .18s ease, transform .18s ease; }
+      .magnifier.is-visible { opacity: 1; transform: scale(1); }
+      .magnifier canvas { display: block; width: 100%; height: 100%; }
+      @media (hover: hover) and (pointer: fine) { .zine-page { cursor: none; } }
 
-    .fold-marks { position: absolute; z-index: 6; inset: 0; display: none; pointer-events: none; }
-    .stage[data-view="sheet"] .fold-marks { display: block; }
-    .fold-vertical, .fold-horizontal { position: absolute; opacity: .78; }
-    .fold-vertical { top: 0; bottom: 0; left: 25%; width: 50%; border-left: 1px dashed rgba(22,22,22,.43); }
-    .fold-vertical::before, .fold-vertical::after { position: absolute; top: 0; bottom: 0; border-left: 1px dashed rgba(22,22,22,.43); content: ""; }
-    .fold-vertical::before { left: 100%; }
-    .fold-vertical::after { left: 200%; }
-    .fold-horizontal { top: 50%; right: 0; left: 0; border-top: 1px dashed rgba(22,22,22,.4); }
-    .cut-mark { position: absolute; top: 50%; left: 37.5%; width: 25%; border-top: 2px solid rgba(229,77,158,.9); }
+      .side-controls { gap: 16px; }
+      .control-group { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+      .control-label { margin-bottom: 2px; }
+      .page-controls { display: flex; align-items: center; gap: 7px; }
+      .page-button { width: 34px; height: 32px; border: 1px solid rgba(29,29,29,.2); background: rgba(250,249,245,.65); font-size: 17px; line-height: 1; }
+      .page-count { min-width: 55px; color: #53514d; font-size: 10px; font-variant-numeric: tabular-nums; text-align: center; }
+      .help-note { max-width: 165px; margin: 0; color: #77756f; font-size: 10px; line-height: 1.55; }
+      .status-line { display: flex; justify-content: space-between; gap: 12px; margin-top: 10px; color: #77756f; font-size: 9px; letter-spacing: .06em; }
+      .status-line span:last-child { text-align: right; }
 
-    .side-controls { gap: 16px; }
-    .control-group { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
-    .control-label { margin-bottom: 2px; }
-    .page-controls { display: flex; align-items: center; gap: 7px; }
-    .page-button { width: 34px; height: 32px; border: 1px solid rgba(29,29,29,.2); background: rgba(250,249,245,.65); font-size: 17px; line-height: 1; }
-    .page-count { min-width: 55px; color: #53514d; font-size: 10px; font-variant-numeric: tabular-nums; text-align: center; }
-    .fold-action { width: 100%; min-height: 38px; justify-content: space-between; margin-top: 4px; padding: 0 10px; border-color: var(--ink); color: #fff; background: var(--ink); }
-    .fold-action:hover { color: var(--ink); background: transparent; }
-    .help-note { max-width: 165px; margin: 0; color: #77756f; font-size: 10px; line-height: 1.55; }
-    .status-line { display: flex; justify-content: space-between; gap: 12px; margin-top: 10px; color: #77756f; font-size: 9px; letter-spacing: .06em; }
-    .status-line span:last-child { text-align: right; }
+      .detail-dialog { width: min(92vw, 1100px); height: min(90vh, 780px); max-width: none; max-height: none; padding: 0; overflow: hidden; border: 1px solid rgba(255,255,255,.8); background: rgba(24,24,24,.96); color: var(--ink); }
+      .detail-dialog::backdrop { background: rgba(14,14,15,.78); backdrop-filter: blur(5px); }
+      .dialog-art { position: relative; width: 100%; height: 100%; overflow: hidden; }
+      .dialog-art::before { position: absolute; inset: 0; background-image: url("zine.png"); background-repeat: no-repeat; background-position: var(--art-position); background-size: 400% 200%; content: ""; }
+      .dialog-art.is-upside-down::before { transform: rotate(180deg); }
+      .dialog-close { position: absolute; z-index: 2; top: 12px; right: 12px; width: 36px; height: 36px; border: 1px solid rgba(255,255,255,.68); color: #fff; background: rgba(0,0,0,.5); cursor: pointer; }
+      .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+      :focus-visible { outline: 2px solid var(--pink); outline-offset: 3px; }
 
-    .detail-dialog { width: min(720px, calc(100vw - 30px)); max-width: none; max-height: min(84vh, 720px); padding: 0; overflow: auto; border: 1px solid rgba(255,255,255,.8); color: var(--ink); background: var(--paper); box-shadow: 0 22px 90px rgba(0,0,0,.36); }
-    .detail-dialog::backdrop { background: rgba(14,14,15,.68); backdrop-filter: blur(5px); }
-    .detail-dialog { width: min(92vw, 1100px); height: min(90vh, 780px); max-width: none; max-height: none; padding: 0; overflow: hidden; border: 1px solid rgba(255,255,255,.8); background: #181818; box-shadow: 0 22px 90px rgba(0,0,0,.36); }
-    .detail-dialog::backdrop { background: rgba(14,14,15,.78); backdrop-filter: blur(5px); }
-    .dialog-art { position: relative; width: 100%; height: 100%; overflow: hidden; }
-    .dialog-art::before { position: absolute; inset: 0; background-image: url("zine.png"); background-repeat: no-repeat; background-position: var(--art-position); background-size: 400% 200%; content: ""; }
-    .dialog-art.is-upside-down::before { transform: rotate(180deg); }
-    .dialog-close { position: absolute; z-index: 2; top: 12px; right: 12px; width: 36px; height: 36px; border: 1px solid rgba(255,255,255,.68); color: #fff; background: rgba(0,0,0,.5); cursor: pointer; font-size: 21px; }
-    .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
-    :focus-visible { outline: 2px solid var(--pink); outline-offset: 3px; }
+      @media (max-width: 900px) {
+        .studio { grid-template-columns: 130px minmax(0, 1fr); gap: 17px; }
+        .rail-right { grid-column: 1; grid-row: 2; flex-direction: row; flex-wrap: wrap; align-items: flex-start; gap: 18px; }
+        .rail-left { grid-column: 1; grid-row: 1; }
+        .center-column { grid-column: 2; grid-row: 1 / span 2; }
+        .rail-right .control-group { min-width: 125px; }
+        .rail-right .help-note { display: none; }
+      }
 
-    @media (max-width: 900px) {
-      .studio { grid-template-columns: 130px minmax(0, 1fr); gap: 17px; }
-      .rail-right { grid-column: 1; grid-row: 2; flex-direction: row; flex-wrap: wrap; align-items: flex-start; gap: 18px; }
-      .rail-left { grid-column: 1; grid-row: 1; }
-      .center-column { grid-column: 2; grid-row: 1 / span 2; }
-      .rail-right .control-group { min-width: 125px; }
-      .rail-right .help-note { display: none; }
-      .fold-action { max-width: 170px; }
-    }
+      @media (max-width: 620px) {
+        .topbar { height: 62px; padding: 0 16px; }
+        .brand-name { font-size: 16px; }
+        .topbar-note { max-width: 105px; font-size: 8px; text-align: right; }
+        .studio { min-height: auto; padding: 16px 12px 28px; grid-template-columns: 1fr; gap: 13px; }
+        .rail-left { grid-column: 1; grid-row: 1; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 4px 14px; padding: 0 3px; }
+        .rail-left .rail-kicker { grid-column: 1 / -1; }
+        .rail-left .rail-title { max-width: none; margin: 2px 0; font-size: 24px; }
+        .rail-left .rail-copy, .rail-left .rail-rule, .rail-left .rail-quote, .rail-left .rail-index { display: none; }
+        .center-column { grid-column: 1; grid-row: 2; }
+        .rail-right { grid-column: 1; grid-row: 3; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 0 3px; }
+        .viewer-toolbar { margin-bottom: 8px; }
+        .mode-button { padding: 0 9px; font-size: 9px; }
+        .tool-button { gap: 5px; padding: 0 8px; font-size: 9px; }
+        .stage-wrap { padding: 13px 9px 17px; }
+        .stage { aspect-ratio: 877 / 1240; }
+        .stage[data-view="sheet"] { aspect-ratio: 3508 / 2480; }
+        .read-spread { grid-template-columns: 1fr; }
+        .read-spread .zine-page:nth-child(2) { display: none; }
+        .status-line { font-size: 8px; }
+      }
 
-    @media (max-width: 620px) {
-      .topbar { height: 62px; padding: 0 16px; }
-      .brand-name { font-size: 16px; }
-      .topbar-note { max-width: 105px; font-size: 8px; text-align: right; }
-      .studio { min-height: auto; padding: 16px 12px 28px; grid-template-columns: 1fr; gap: 13px; }
-      .rail-left { grid-column: 1; grid-row: 1; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 4px 14px; padding: 0 3px; }
-      .rail-left .rail-kicker { grid-column: 1 / -1; }
-      .rail-left .rail-title { max-width: none; margin: 2px 0; font-size: 24px; }
-      .rail-left .rail-copy, .rail-left .rail-rule, .rail-left .rail-quote, .rail-left .rail-index { display: none; }
-      .center-column { grid-column: 1; grid-row: 2; }
-      .rail-right { grid-column: 1; grid-row: 3; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 0 3px; }
-      .viewer-toolbar { margin-bottom: 8px; }
-      .mode-button { padding: 0 9px; font-size: 9px; }
-      .tool-button { gap: 5px; padding: 0 8px; font-size: 9px; }
-      .stage-wrap { padding: 13px 9px 17px; }
-      .stage { aspect-ratio: 877 / 1240; }
-      .stage[data-view="sheet"] { aspect-ratio: 3508 / 2480; }
-      .read-spread { grid-template-columns: 1fr; }
-      .read-spread .zine-page:nth-child(2) { display: none; }
-      .status-line { font-size: 8px; }
-      .dialog-art { background-size: 400% 200%; }
-    }
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+      }
 
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
-    }
+      body { min-height: 100svh; color: #171717; background: #f4f3ef; transition: color .25s ease, background-color .25s ease; }
+      body[data-tone="dark"] { color: #f1f0ec; background: #111; }
+      .topbar, .rail { display: none; }
+      .studio { width: 100%; height: 100svh; min-height: 0; margin: 0; padding: 20px; display: flex; align-items: center; justify-content: center; }
+      .center-column { width: min(1180px, 100%); display: grid; grid-template-columns: 1fr; align-items: center; gap: 20px; }
+      .stage-wrap { display: flex; justify-content: center; padding: 0; border: 0; background: transparent; box-shadow: none; }
+      .stage-wrap::before, .stage-wrap::after { display: none; }
+      .stage { width: auto; height: min(70svh, 680px); max-width: 100%; margin: auto; aspect-ratio: 3508 / 2480; }
+      .stage[data-view="sheet"] { height: min(70svh, 680px); aspect-ratio: 3508 / 2480; }
+      .control-dock { display: flex; align-items: center; justify-content: center; gap: clamp(16px, 4vw, 58px); min-height: 42px; }
+      .mode-tabs { border-color: rgba(20,20,20,.14); background: rgba(255,255,255,.72); }
+      .mode-button { min-height: 34px; padding: 0 15px; color: #6c6a64; font-size: 11px; }
+      .mode-button[aria-pressed="true"] { color: #fff; background: #171717; }
+      .page-controls { gap: 9px; }
+      .page-button { width: 38px; height: 36px; border-color: rgba(20,20,20,.16); background: rgba(255,255,255,.72); font-size: 20px; }
+      .page-count { min-width: 74px; color: inherit; font-size: 11px; }
+      .background-toggle { width: 36px; height: 36px; display: grid; place-items: center; padding: 0; border: 1px solid rgba(20,20,20,.16); border-radius: 2px; background: rgba(255,255,255,.72); cursor: pointer; }
+      .dock-utilities { display: flex; align-items: center; gap: 8px; }
+      .music-control { position: relative; display: flex; }
+      .music-button { width: 36px; height: 36px; display: grid; place-items: center; padding: 0; border: 1px solid rgba(20,20,20,.16); border-radius: 2px; background: rgba(255,255,255,.72); cursor: pointer; }
+      .music-button:hover { background: rgba(255,255,255,.92); }
+      .music-popover { position: absolute; z-index: 60; right: 0; bottom: 100%; width: min(320px, calc(100vw - 24px)); height: 352px; overflow: hidden; border-radius: 12px; background: #181818; box-shadow: 0 24px 64px rgba(0,0,0,.3); opacity: 0; transform: translateY(10px); transition: opacity .18s ease, transform .18s ease; visibility: hidden; pointer-events: none; }
+      .music-popover iframe { display: block; width: 100%; height: 352px; border: 0; border-radius: 12px; }
+      .music-control[data-open="true"] .music-popover { opacity: 1; pointer-events: auto; transform: translateY(0); visibility: visible; }
+      @media (hover: hover) and (pointer: fine) {
+        .music-control:hover .music-popover, .music-control:focus-within .music-popover { opacity: 1; pointer-events: auto; transform: translateY(0); visibility: visible; }
+      }
+      .tone-swatch { width: 16px; height: 16px; display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; border: 1px solid rgba(20,20,20,.35); }
+      .tone-swatch span:first-child { background: #f4f3ef; }
+      .tone-swatch span:last-child { background: #111; }
+      body[data-tone="dark"] .mode-tabs, body[data-tone="dark"] .page-button, body[data-tone="dark"] .background-toggle, body[data-tone="dark"] .music-button { border-color: rgba(255,255,255,.22); background: rgba(255,255,255,.04); }
+      body[data-tone="dark"] .mode-button { color: #aaa; }
+      body[data-tone="dark"] .mode-button[aria-pressed="true"] { color: #111; background: #f1f0ec; }
+      body[data-tone="dark"] .page-button:hover, body[data-tone="dark"] .background-toggle:hover, body[data-tone="dark"] .music-button:hover { background: #333; }
 
-    body { min-height: 100svh; color: #171717; background: #f4f3ef; transition: color .25s ease, background-color .25s ease; }
-    body[data-tone="dark"] { color: #f1f0ec; background: #111; }
-    .topbar, .rail { display: none; }
-    .studio { width: 100%; height: 100svh; min-height: 0; margin: 0; padding: 20px; display: flex; align-items: center; justify-content: center; }
-    .center-column { width: min(1180px, 100%); display: grid; grid-template-columns: 1fr; align-items: center; gap: 20px; }
-    .stage-wrap { display: flex; justify-content: center; padding: 0; border: 0; background: transparent; box-shadow: none; }
-    .stage-wrap::before, .stage-wrap::after { display: none; }
-    .stage { width: auto; height: min(70svh, 680px); max-width: 100%; margin: auto; aspect-ratio: 3508 / 2480; }
-    .stage[data-view="sheet"] { height: min(70svh, 680px); aspect-ratio: 3508 / 2480; }
-    .control-dock { display: flex; align-items: center; justify-content: center; gap: clamp(16px, 4vw, 58px); min-height: 42px; }
-    .mode-tabs { border-color: rgba(20,20,20,.14); background: rgba(255,255,255,.72); }
-    .mode-button { min-height: 34px; padding: 0 15px; color: #6c6a64; font-size: 11px; }
-    .mode-button[aria-pressed="true"] { color: #fff; background: #171717; }
-    .page-controls { gap: 9px; }
-    .page-button { width: 38px; height: 36px; border-color: rgba(20,20,20,.16); background: rgba(255,255,255,.72); font-size: 20px; }
-    .page-count { min-width: 74px; color: inherit; font-size: 11px; }
-    .background-toggle { width: 36px; height: 36px; display: grid; place-items: center; padding: 0; border: 1px solid rgba(20,20,20,.16); border-radius: 2px; background: rgba(255,255,255,.72); cursor: pointer; }
-    .dock-utilities { display: flex; align-items: center; gap: 8px; }
-    .music-control { position: relative; display: flex; }
-    .music-button { width: 36px; height: 36px; display: grid; place-items: center; padding: 0; border: 1px solid rgba(20,20,20,.16); border-radius: 2px; background: rgba(255,255,255,.72); cursor: pointer; font-size: 20px; line-height: 1; }
-    .music-button:hover { background: rgba(255,255,255,.92); }
-    .music-popover { position: absolute; z-index: 60; right: 0; bottom: 100%; width: min(320px, calc(100vw - 24px)); height: 352px; overflow: hidden; border-radius: 12px; background: #181818; box-shadow: 0 12px 36px rgba(0,0,0,.42); opacity: 0; pointer-events: none; transform: translateY(8px); visibility: hidden; transition: opacity .18s ease, transform .18s ease, visibility .18s; }
-    .music-popover iframe { display: block; width: 100%; height: 352px; border: 0; border-radius: 12px; }
-    .music-control[data-open="true"] .music-popover { opacity: 1; pointer-events: auto; transform: translateY(0); visibility: visible; }
-    @media (hover: hover) and (pointer: fine) {
-      .music-control:hover .music-popover, .music-control:focus-within .music-popover { opacity: 1; pointer-events: auto; transform: translateY(0); visibility: visible; }
-    }
-    .tone-swatch { width: 16px; height: 16px; display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; border: 1px solid rgba(20,20,20,.35); }
-    .tone-swatch span:first-child { background: #f4f3ef; }
-    .tone-swatch span:last-child { background: #111; }
-    body[data-tone="dark"] .mode-tabs, body[data-tone="dark"] .page-button, body[data-tone="dark"] .background-toggle, body[data-tone="dark"] .music-button { border-color: rgba(255,255,255,.22); background: #222; color: #f1f0ec; }
-    body[data-tone="dark"] .mode-button { color: #aaa; }
-    body[data-tone="dark"] .mode-button[aria-pressed="true"] { color: #111; background: #f1f0ec; }
-    body[data-tone="dark"] .page-button:hover, body[data-tone="dark"] .background-toggle:hover, body[data-tone="dark"] .music-button:hover { background: #333; }
-
-    @media (max-width: 620px) {
-      .studio { padding: 12px; }
-      .center-column { gap: 16px; }
-      .stage { height: min(54svh, 450px); aspect-ratio: 877 / 1240; }
-      .stage[data-view="sheet"] { width: 92vw; height: auto; aspect-ratio: 3508 / 2480; }
-      .control-dock { display: grid; grid-template-columns: 1fr auto; justify-content: stretch; gap: 12px; }
-      .mode-tabs { justify-self: start; }
-      .mode-button { padding: 0 11px; font-size: 10px; }
-      .page-controls { grid-column: 1 / -1; grid-row: 2; justify-self: center; }
-      .dock-utilities { grid-column: 2; grid-row: 1; justify-self: end; }
-    }
-  </style>
-</head>
-<body data-tone="dark">
-  <main class="studio">
-    <section class="center-column" aria-label="Zine tương tác">
-      <div class="stage-wrap">
-        <div class="stage" id="stage" data-view="read" aria-label="Zine">
-          <div class="read-spread" id="readSpread" aria-label="Hai trang đang mở"></div>
-          <div class="sheet-view" id="sheetView" aria-label="Bản trải">
-            <img class="sheet-art" src="zine.png" alt="">
-          </div>
-          <div class="fold-marks" aria-hidden="true"><span class="fold-vertical"></span><span class="fold-horizontal"></span><span class="cut-mark"></span></div>
-          <div class="magnifier" id="magnifier" aria-hidden="true"><canvas id="magnifierCanvas" width="420" height="420"></canvas></div>
-        </div>
-      </div>
-      <div class="control-dock">
-        <div class="mode-tabs" role="group" aria-label="Chế độ xem">
-          <button class="mode-button" id="readMode" type="button" aria-pressed="true">Đọc zine</button>
-          <button class="mode-button" id="sheetMode" type="button" aria-pressed="false">Bung phẳng</button>
-        </div>
-        <div class="page-controls" aria-label="Điều hướng trang">
-          <button class="page-button" id="previousPage" type="button" aria-label="Lật về trang trước">‹</button>
-          <span class="page-count" id="pageCount" aria-live="polite">08 — 01</span>
-          <button class="page-button" id="nextPage" type="button" aria-label="Lật sang trang tiếp">›</button>
-        </div>
-        <div class="dock-utilities">
-          <div class="music-control" id="musicControl">
-            <button class="music-button" id="musicButton" type="button" aria-label="Mở nhạc và chọn bài" aria-expanded="false" aria-controls="spotifyPopover" title="Nhạc">♫</button>
-            <div class="music-popover" id="spotifyPopover">
-              <iframe data-testid="embed-iframe" title="Spotify playlist: Thư tình tháng mười" src="https://open.spotify.com/embed/playlist/3l0ZEJJgtANJEF5Kkvq1XN?utm_source=generator&si=4d3ed6ec644c4a93" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      @media (max-width: 620px) {
+        .studio { padding: 12px; }
+        .center-column { gap: 16px; }
+        .stage { height: min(54svh, 450px); aspect-ratio: 877 / 1240; }
+        .stage[data-view="sheet"] { width: 92vw; height: auto; aspect-ratio: 3508 / 2480; }
+        .control-dock { display: grid; grid-template-columns: 1fr auto; justify-content: stretch; gap: 12px; }
+        .mode-tabs { justify-self: start; }
+        .mode-button { padding: 0 11px; font-size: 10px; }
+        .page-controls { grid-column: 1 / -1; grid-row: 2; justify-self: center; }
+        .dock-utilities { grid-column: 2; grid-row: 1; justify-self: end; }
+      }
+    </style>
+  </head>
+  <body data-tone="dark">
+    <main class="studio">
+      <section class="center-column" aria-label="Thư tình tháng mười">
+        <div class="stage-wrap">
+          <div class="stage" id="stage" data-view="read" aria-label="Thư tình tháng mười">
+            <div class="read-spread" id="readSpread" aria-label="Hai trang đang mở"></div>
+            <div class="sheet-view" id="sheetView" aria-label="Bản trải">
+              <img class="sheet-art" src="zine.png" alt="">
             </div>
+            <div class="magnifier" id="magnifier" aria-hidden="true"><canvas id="magnifierCanvas" width="420" height="420"></canvas></div>
           </div>
-          <button class="background-toggle" id="backgroundToggle" type="button" aria-label="Đổi sang nền sáng" title="Đổi nền sáng / tối">
-            <span class="tone-swatch" aria-hidden="true"><span></span><span></span></span>
-          </button>
         </div>
+        <div class="control-dock">
+          <div class="mode-tabs" role="group" aria-label="Chế độ xem">
+            <button class="mode-button" id="readMode" type="button" aria-pressed="true">Đọc zine</button>
+            <button class="mode-button" id="sheetMode" type="button" aria-pressed="false">Bung phẳng</button>
+          </div>
+          <div class="page-controls" aria-label="Điều hướng trang">
+            <button class="page-button" id="previousPage" type="button" aria-label="Lật về trang trước">‹</button>
+            <span class="page-count" id="pageCount" aria-live="polite">08 — 01</span>
+            <button class="page-button" id="nextPage" type="button" aria-label="Lật sang trang tiếp">›</button>
+          </div>
+          <div class="dock-utilities">
+            <div class="music-control" id="musicControl">
+              <button class="music-button" id="musicButton" type="button" aria-label="Mở nhạc và chọn bài" aria-expanded="false" aria-controls="spotifyPopover" title="Nhạc">♫</button>
+              <div class="music-popover" id="spotifyPopover">
+                <iframe title="Spotify playlist: Thư tình tháng mười" src="https://open.spotify.com/embed/playlist/3l0ZEJJgtANJEF5Kkvq1XN?utm_source=generator&si=4dcd4d1a6d5049d1" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </div>
+            <button class="background-toggle" id="backgroundToggle" type="button" aria-label="Đổi sang nền sáng" title="Đổi nền sáng / tối">
+              <span class="tone-swatch" aria-hidden="true"><span></span><span></span></span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="detail-dialog" id="detailDialog" aria-label="Phóng to mặt zine">
+      <div class="dialog-art" id="dialogArt">
+        <button class="dialog-close" id="closeDialog" type="button" aria-label="Đóng">×</button>
       </div>
-    </section>
-  </main>
+    </dialog>
 
-  <dialog class="detail-dialog" id="detailDialog" aria-label="Phóng to mặt zine">
-    <div class="dialog-art" id="dialogArt">
-      <button class="dialog-close" id="closeDialog" type="button" aria-label="Đóng">×</button>
-    </div>
-  </dialog>
+    <script>
+      const pageTotal = 8;
+      const stage = document.querySelector("#stage");
+      const readSpread = document.querySelector("#readSpread");
+      const sheetView = document.querySelector("#sheetView");
+      const readMode = document.querySelector("#readMode");
+      const sheetMode = document.querySelector("#sheetMode");
+      const pageCountLabel = document.querySelector("#pageCount");
+      const detailDialog = document.querySelector("#detailDialog");
+      const dialogArt = document.querySelector("#dialogArt");
+      const musicControl = document.querySelector("#musicControl");
+      const musicButton = document.querySelector("#musicButton");
+      const backgroundToggle = document.querySelector("#backgroundToggle");
+      const magnifier = document.querySelector("#magnifier");
+      const magnifierCanvas = document.querySelector("#magnifierCanvas");
+      const magnifierContext = magnifierCanvas.getContext("2d");
+      const artwork = document.querySelector(".sheet-art");
+      const narrowView = window.matchMedia("(max-width: 620px)");
+      const hoverAvailable = window.matchMedia("(hover: hover) and (pointer: fine)");
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+      let currentPage = 0;
+      let pageTurnInProgress = false;
+      const readingOrder = [7, 0, 1, 2, 3, 4, 5, 6];
+      const guideCells = [
+        { column: 3, row: 1 },
+        { column: 3, row: 0 },
+        { column: 2, row: 0 },
+        { column: 1, row: 0 },
+        { column: 0, row: 0 },
+        { column: 0, row: 1 },
+        { column: 1, row: 1 },
+        { column: 2, row: 1 }
+      ];
 
-  <script>
-    const pageTotal = 8;
-
-    const stage = document.querySelector("#stage");
-    const readSpread = document.querySelector("#readSpread");
-    const sheetView = document.querySelector("#sheetView");
-    const readMode = document.querySelector("#readMode");
-    const sheetMode = document.querySelector("#sheetMode");
-    const pageCountLabel = document.querySelector("#pageCount");
-    const detailDialog = document.querySelector("#detailDialog");
-    const dialogArt = document.querySelector("#dialogArt");
-    const musicControl = document.querySelector("#musicControl");
-    const musicButton = document.querySelector("#musicButton");
-    const backgroundToggle = document.querySelector("#backgroundToggle");
-    const magnifier = document.querySelector("#magnifier");
-    const magnifierCanvas = document.querySelector("#magnifierCanvas");
-    const magnifierContext = magnifierCanvas.getContext("2d");
-    const artwork = document.querySelector(".sheet-art");
-    const narrowView = window.matchMedia("(max-width: 620px)");
-    const hoverAvailable = window.matchMedia("(hover: hover) and (pointer: fine)");
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-    let currentPage = 0;
-    let pageTurnInProgress = false;
-    const readingOrder = [7, 0, 1, 2, 3, 4, 5, 6];
-    const guideCells = [
-      { column: 3, row: 1 },
-      { column: 3, row: 0 },
-      { column: 2, row: 0 },
-      { column: 1, row: 0 },
-      { column: 0, row: 0 },
-      { column: 0, row: 1 },
-      { column: 1, row: 1 },
-      { column: 2, row: 1 }
-    ];
-
-    function pageMarkup(index, compact = false) {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = `zine-page${compact ? " compact-page" : ""}`;
-      button.dataset.page = index;
-      if (index >= 1 && index <= 4) button.classList.add("is-upside-down");
-      button.style.setProperty("--order", index);
-      const cell = guideCells[index];
-      button.style.setProperty("--art-position", `${cell.column * 100 / 3}% ${cell.row * 100}%`);
-      button.style.setProperty("--fold-angle", index % 2 ? "14deg" : "-14deg");
-      button.setAttribute("aria-label", `Phóng to mặt giấy ${String(index + 1).padStart(2, "0")} / 08`);
-      return button;
-    }
-
-    function renderPages() {
-      readSpread.replaceChildren();
-      sheetView.querySelectorAll(".sheet-cell").forEach((hotspot) => hotspot.remove());
-      const visibleCount = narrowView.matches ? 1 : 2;
-      for (let offset = 0; offset < visibleCount; offset++) {
-        readSpread.append(pageMarkup(readingOrder[(currentPage + offset) % pageTotal]));
-      }
-      for (let index = 0; index < pageTotal; index++) {
+      function pageMarkup(index, compact = false) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = `zine-page${compact ? " compact-page" : ""}`;
+        button.dataset.page = index;
+        if (index >= 1 && index <= 4) button.classList.add("is-upside-down");
+        button.style.setProperty("--order", index);
         const cell = guideCells[index];
-        const hotspot = document.createElement("button");
-        hotspot.type = "button";
-        hotspot.className = "sheet-cell";
-        hotspot.dataset.page = index;
-        hotspot.style.left = `${cell.column * 25}%`;
-        hotspot.style.top = `${cell.row * 50}%`;
-        hotspot.setAttribute("aria-label", `Phóng to mặt giấy ${String(index + 1).padStart(2, "0")} / 08`);
-        sheetView.append(hotspot);
+        button.style.setProperty("--art-position", `${cell.column * 100 / 3}% ${cell.row * 100}%`);
+        button.style.setProperty("--fold-angle", index % 2 ? "14deg" : "-14deg");
+        button.setAttribute("aria-label", `Phóng to mặt giấy ${String(index + 1).padStart(2, "0")} / 08`);
+        return button;
       }
-      updateStatus();
-    }
 
-    function updateStatus() {
-      const step = narrowView.matches ? 1 : 2;
-      const firstLabel = String(readingOrder[currentPage] + 1).padStart(2, "0");
-      const secondLabel = step === 1 ? firstLabel : String(readingOrder[(currentPage + 1) % pageTotal] + 1).padStart(2, "0");
-      pageCountLabel.textContent = step === 1 ? `${firstLabel} / 08` : `${firstLabel} — ${secondLabel}`;
-    }
-
-    function createPageOverlay(sourcePage, overlayClass) {
-      const stageBounds = stage.getBoundingClientRect();
-      const pageBounds = sourcePage.getBoundingClientRect();
-      const overlay = sourcePage.cloneNode(false);
-      overlay.classList.add(overlayClass);
-      overlay.setAttribute("aria-hidden", "true");
-      overlay.tabIndex = -1;
-      overlay.style.left = `${pageBounds.left - stageBounds.left}px`;
-      overlay.style.top = `${pageBounds.top - stageBounds.top}px`;
-      overlay.style.width = `${pageBounds.width}px`;
-      overlay.style.height = `${pageBounds.height}px`;
-      stage.append(overlay);
-      return overlay;
-    }
-
-    function setPage(next) {
-      if (pageTurnInProgress) return;
-      hideMagnifier();
-      const step = narrowView.matches ? 1 : 2;
-      const direction = next >= currentPage ? 1 : -1;
-      let nextPage = (next + pageTotal) % pageTotal;
-      if (step === 2 && nextPage % 2 !== 0) nextPage = (nextPage + pageTotal - 1) % pageTotal;
-      const departingPage = direction > 0 ? readSpread.querySelector(".zine-page:last-child") : readSpread.querySelector(".zine-page:first-child");
-      const stationaryPage = direction > 0 ? readSpread.querySelector(".zine-page:first-child") : readSpread.querySelector(".zine-page:last-child");
-      let turningPage = null;
-      let fadingPage = null;
-      stage.querySelectorAll(".page-turn-clone, .page-fade-clone").forEach((clone) => clone.remove());
-      if (stage.dataset.view === "read" && departingPage) {
-        turningPage = createPageOverlay(departingPage, "page-turn-clone");
-        turningPage.style.transformOrigin = direction > 0 ? "left center" : "right center";
-        if (step === 2 && stationaryPage) fadingPage = createPageOverlay(stationaryPage, "page-fade-clone");
+      function renderPages() {
+        readSpread.replaceChildren();
+        sheetView.querySelectorAll(".sheet-cell").forEach((hotspot) => hotspot.remove());
+        const visibleCount = narrowView.matches ? 1 : 2;
+        for (let offset = 0; offset < visibleCount; offset++) {
+          readSpread.append(pageMarkup(readingOrder[(currentPage + offset) % pageTotal]));
+        }
+        for (let index = 0; index < pageTotal; index++) {
+          const cell = guideCells[index];
+          const hotspot = document.createElement("button");
+          hotspot.type = "button";
+          hotspot.className = "sheet-cell";
+          hotspot.dataset.page = index;
+          hotspot.style.left = `${cell.column * 25}%`;
+          hotspot.style.top = `${cell.row * 50}%`;
+          hotspot.setAttribute("aria-label", `Phóng to mặt giấy ${String(index + 1).padStart(2, "0")} / 08`);
+          sheetView.append(hotspot);
+        }
+        updateStatus();
       }
-      currentPage = nextPage;
-      renderPages();
-      if (turningPage) {
-        pageTurnInProgress = true;
-        const turnAngle = direction > 0 ? -180 : 180;
-        const duration = reducedMotion.matches ? 0 : 500;
-        const turnFrames = [
-          { transform: "rotateY(0deg) translateZ(0)", boxShadow: "0 5px 12px rgba(0,0,0,.12)" },
-          { transform: `rotateY(${turnAngle * .52}deg) translateZ(14px)`, boxShadow: "0 20px 32px rgba(0,0,0,.28)", offset: .52 },
-          { transform: `rotateY(${turnAngle}deg) translateZ(0)`, boxShadow: "0 5px 12px rgba(0,0,0,.12)" }
-        ];
-        const animationOptions = { duration, easing: "cubic-bezier(.4,0,.2,1)", fill: "forwards" };
-        const animations = [turningPage.animate(turnFrames, animationOptions)];
-        if (fadingPage) animations.push(fadingPage.animate([{ opacity: 1 }, { opacity: 0 }], animationOptions));
-        Promise.all(animations.map((animation) => animation.finished)).then(() => {
-          turningPage.remove();
-          fadingPage?.remove();
-          pageTurnInProgress = false;
-        }).catch(() => {
-          turningPage.remove();
-          fadingPage?.remove();
-          pageTurnInProgress = false;
-        });
+
+      function updateStatus() {
+        const step = narrowView.matches ? 1 : 2;
+        const firstLabel = String(readingOrder[currentPage] + 1).padStart(2, "0");
+        const secondLabel = step === 1 ? firstLabel : String(readingOrder[(currentPage + 1) % pageTotal] + 1).padStart(2, "0");
+        pageCountLabel.textContent = step === 1 ? `${firstLabel} / 08` : `${firstLabel} — ${secondLabel}`;
       }
-    }
 
-    function setView(view) {
-      stage.dataset.view = view;
-      hideMagnifier();
-      readMode.setAttribute("aria-pressed", String(view === "read"));
-      sheetMode.setAttribute("aria-pressed", String(view === "sheet"));
-      if (view === "sheet") {
-        stage.classList.remove("is-unfolding");
-        requestAnimationFrame(() => stage.classList.add("is-unfolding"));
-      } else {
-        stage.classList.remove("is-unfolding");
+      function createPageOverlay(sourcePage, overlayClass) {
+        const stageBounds = stage.getBoundingClientRect();
+        const pageBounds = sourcePage.getBoundingClientRect();
+        const overlay = sourcePage.cloneNode(false);
+        overlay.classList.add(overlayClass);
+        overlay.setAttribute("aria-hidden", "true");
+        overlay.tabIndex = -1;
+        overlay.style.left = `${pageBounds.left - stageBounds.left}px`;
+        overlay.style.top = `${pageBounds.top - stageBounds.top}px`;
+        overlay.style.width = `${pageBounds.width}px`;
+        overlay.style.height = `${pageBounds.height}px`;
+        stage.append(overlay);
+        return overlay;
       }
-      updateStatus();
-    }
 
-    function showPageDetail(index) {
-      hideMagnifier();
-      const cell = guideCells[index];
-      dialogArt.style.setProperty("--art-position", `${cell.column * 100 / 3}% ${cell.row * 100}%`);
-      dialogArt.classList.toggle("is-upside-down", index >= 1 && index <= 4);
-      detailDialog.showModal();
-    }
-
-    function hideMagnifier() {
-      magnifier.classList.remove("is-visible");
-    }
-
-    function setMusicOpen(open) {
-      musicControl.dataset.open = String(open);
-      musicButton.setAttribute("aria-expanded", String(open));
-    }
-
-    function updateMagnifier(event) {
-      const page = event.target.closest(".zine-page");
-      if (!page || !hoverAvailable.matches || stage.dataset.view !== "read" || !artwork.complete || !artwork.naturalWidth) {
+      function setPage(next) {
+        if (pageTurnInProgress) return;
         hideMagnifier();
-        return;
+        const step = narrowView.matches ? 1 : 2;
+        const direction = next >= currentPage ? 1 : -1;
+        let nextPage = (next + pageTotal) % pageTotal;
+        if (step === 2 && nextPage % 2 !== 0) nextPage = (nextPage + pageTotal - 1) % pageTotal;
+        const departingPage = direction > 0 ? readSpread.querySelector(".zine-page:last-child") : readSpread.querySelector(".zine-page:first-child");
+        const stationaryPage = direction > 0 ? readSpread.querySelector(".zine-page:first-child") : readSpread.querySelector(".zine-page:last-child");
+        let turningPage = null;
+        let fadingPage = null;
+        stage.querySelectorAll(".page-turn-clone, .page-fade-clone").forEach((clone) => clone.remove());
+        if (stage.dataset.view === "read" && departingPage) {
+          turningPage = createPageOverlay(departingPage, "page-turn-clone");
+          turningPage.style.transformOrigin = direction > 0 ? "left center" : "right center";
+          if (step === 2 && stationaryPage) fadingPage = createPageOverlay(stationaryPage, "page-fade-clone");
+        }
+        currentPage = nextPage;
+        renderPages();
+        if (turningPage) {
+          pageTurnInProgress = true;
+          const turnAngle = direction > 0 ? -180 : 180;
+          const duration = reducedMotion.matches ? 0 : 500;
+          const turnFrames = [
+            { transform: "rotateY(0deg) translateZ(0)", boxShadow: "0 5px 12px rgba(0,0,0,.12)" },
+            { transform: `rotateY(${turnAngle * .52}deg) translateZ(14px)`, boxShadow: "0 20px 32px rgba(0,0,0,.28)", offset: .52 },
+            { transform: `rotateY(${turnAngle}deg) translateZ(0)`, boxShadow: "0 5px 12px rgba(0,0,0,.12)" }
+          ];
+          const animationOptions = { duration, easing: "cubic-bezier(.4,0,.2,1)", fill: "forwards" };
+          const animations = [turningPage.animate(turnFrames, animationOptions)];
+          if (fadingPage) animations.push(fadingPage.animate([{ opacity: 1 }, { opacity: 0 }], animationOptions));
+          Promise.all(animations.map((animation) => animation.finished)).then(() => {
+            turningPage.remove();
+            fadingPage?.remove();
+            pageTurnInProgress = false;
+          }).catch(() => {
+            turningPage.remove();
+            fadingPage?.remove();
+            pageTurnInProgress = false;
+          });
+        }
       }
 
-      const pageBounds = page.getBoundingClientRect();
-      const stageBounds = stage.getBoundingClientRect();
-      const lensSize = magnifierCanvas.width;
-      const magnification = 4.6;
-      const index = Number(page.dataset.page);
-      const cell = guideCells[index];
-      const cellWidth = artwork.naturalWidth / 4;
-      const cellHeight = artwork.naturalHeight / 2;
-      const sourceWidth = Math.min(cellWidth, cellWidth * lensSize / pageBounds.width / magnification);
-      const sourceHeight = Math.min(cellHeight, cellHeight * lensSize / pageBounds.height / magnification);
-      const pageX = Math.max(0, Math.min(1, (event.clientX - pageBounds.left) / pageBounds.width));
-      const pageY = Math.max(0, Math.min(1, (event.clientY - pageBounds.top) / pageBounds.height));
-      const rotated = page.classList.contains("is-upside-down");
-      const sourceX = cell.column * cellWidth + (rotated ? 1 - pageX : pageX) * cellWidth;
-      const sourceY = cell.row * cellHeight + (rotated ? 1 - pageY : pageY) * cellHeight;
-      const cropX = Math.max(cell.column * cellWidth, Math.min(cell.column * cellWidth + cellWidth - sourceWidth, sourceX - sourceWidth / 2));
-      const cropY = Math.max(cell.row * cellHeight, Math.min(cell.row * cellHeight + cellHeight - sourceHeight, sourceY - sourceHeight / 2));
-      const lensBounds = magnifier.getBoundingClientRect();
-      magnifier.style.left = `${event.clientX - stageBounds.left - lensBounds.width / 2}px`;
-      magnifier.style.top = `${event.clientY - stageBounds.top - lensBounds.height / 2}px`;
-      magnifierContext.clearRect(0, 0, lensSize, lensSize);
-      if (rotated) {
-        magnifierContext.save();
-        magnifierContext.translate(lensSize / 2, lensSize / 2);
-        magnifierContext.rotate(Math.PI);
-        magnifierContext.drawImage(artwork, cropX, cropY, sourceWidth, sourceHeight, -lensSize / 2, -lensSize / 2, lensSize, lensSize);
-        magnifierContext.restore();
-      } else {
-        magnifierContext.drawImage(artwork, cropX, cropY, sourceWidth, sourceHeight, 0, 0, lensSize, lensSize);
+      function setView(view) {
+        stage.dataset.view = view;
+        hideMagnifier();
+        readMode.setAttribute("aria-pressed", String(view === "read"));
+        sheetMode.setAttribute("aria-pressed", String(view === "sheet"));
+        if (view === "sheet") {
+          stage.classList.remove("is-unfolding");
+          requestAnimationFrame(() => stage.classList.add("is-unfolding"));
+        } else {
+          stage.classList.remove("is-unfolding");
+        }
+        updateStatus();
       }
-      magnifier.classList.add("is-visible");
-    }
 
-    document.querySelector("#previousPage").addEventListener("click", () => setPage(currentPage - (narrowView.matches ? 1 : 2)));
-    document.querySelector("#nextPage").addEventListener("click", () => setPage(currentPage + (narrowView.matches ? 1 : 2)));
-    readMode.addEventListener("click", () => setView("read"));
-    sheetMode.addEventListener("click", () => setView("sheet"));
-    musicButton.addEventListener("click", () => {
-      if (hoverAvailable.matches) setMusicOpen(true);
-      else setMusicOpen(musicControl.dataset.open !== "true");
-    });
-    musicControl.addEventListener("pointerenter", () => { if (hoverAvailable.matches) setMusicOpen(true); });
-    musicControl.addEventListener("pointerleave", () => { if (hoverAvailable.matches) setMusicOpen(false); });
-    musicControl.addEventListener("focusin", () => { if (hoverAvailable.matches) setMusicOpen(true); });
-    musicControl.addEventListener("focusout", (event) => {
-      if (hoverAvailable.matches && !musicControl.contains(event.relatedTarget)) setMusicOpen(false);
-    });
-    document.addEventListener("click", (event) => { if (!musicControl.contains(event.target)) setMusicOpen(false); });
-    backgroundToggle.addEventListener("click", () => {
-      const tone = document.body.dataset.tone === "dark" ? "light" : "dark";
-      document.body.dataset.tone = tone;
-      backgroundToggle.setAttribute("aria-label", tone === "dark" ? "Đổi sang nền sáng" : "Đổi sang nền tối");
-    });
-    document.querySelector("#closeDialog").addEventListener("click", () => detailDialog.close());
-    detailDialog.addEventListener("click", (event) => { if (event.target === detailDialog) detailDialog.close(); });
-    document.querySelector("#stage").addEventListener("click", (event) => {
-      const page = event.target.closest(".zine-page, .sheet-cell");
-      if (page) showPageDetail(Number(page.dataset.page));
-    });
-    stage.addEventListener("pointermove", updateMagnifier);
-    stage.addEventListener("pointerleave", hideMagnifier);
-    detailDialog.addEventListener("close", hideMagnifier);
-    document.addEventListener("keydown", (event) => {
-      if (detailDialog.open || event.altKey || event.ctrlKey || event.metaKey) return;
-      if (event.key === "ArrowLeft") setPage(currentPage - (narrowView.matches ? 1 : 2));
-      if (event.key === "ArrowRight") setPage(currentPage + (narrowView.matches ? 1 : 2));
-    });
-    narrowView.addEventListener("change", () => {
-      currentPage = narrowView.matches ? currentPage : currentPage - (currentPage % 2);
+      function showPageDetail(index) {
+        hideMagnifier();
+        const cell = guideCells[index];
+        dialogArt.style.setProperty("--art-position", `${cell.column * 100 / 3}% ${cell.row * 100}%`);
+        dialogArt.classList.toggle("is-upside-down", index >= 1 && index <= 4);
+        detailDialog.showModal();
+      }
+
+      function hideMagnifier() {
+        magnifier.classList.remove("is-visible");
+      }
+
+      function setMusicOpen(open) {
+        musicControl.dataset.open = String(open);
+        musicButton.setAttribute("aria-expanded", String(open));
+      }
+
+      function updateMagnifier(event) {
+        const page = event.target.closest(".zine-page");
+        if (!page || !hoverAvailable.matches || stage.dataset.view !== "read" || !artwork.complete || !artwork.naturalWidth) {
+          hideMagnifier();
+          return;
+        }
+
+        const pageBounds = page.getBoundingClientRect();
+        const stageBounds = stage.getBoundingClientRect();
+        const lensSize = magnifierCanvas.width;
+        const magnification = 4.6;
+        const index = Number(page.dataset.page);
+        const cell = guideCells[index];
+        const cellWidth = artwork.naturalWidth / 4;
+        const cellHeight = artwork.naturalHeight / 2;
+        const sourceWidth = Math.min(cellWidth, cellWidth * lensSize / pageBounds.width / magnification);
+        const sourceHeight = Math.min(cellHeight, cellHeight * lensSize / pageBounds.height / magnification);
+        const pageX = Math.max(0, Math.min(1, (event.clientX - pageBounds.left) / pageBounds.width));
+        const pageY = Math.max(0, Math.min(1, (event.clientY - pageBounds.top) / pageBounds.height));
+        const rotated = page.classList.contains("is-upside-down");
+        const sourceX = cell.column * cellWidth + (rotated ? 1 - pageX : pageX) * cellWidth;
+        const sourceY = cell.row * cellHeight + (rotated ? 1 - pageY : pageY) * cellHeight;
+        const cropX = Math.max(cell.column * cellWidth, Math.min(cell.column * cellWidth + cellWidth - sourceWidth, sourceX - sourceWidth / 2));
+        const cropY = Math.max(cell.row * cellHeight, Math.min(cell.row * cellHeight + cellHeight - sourceHeight, sourceY - sourceHeight / 2));
+        const lensBounds = magnifier.getBoundingClientRect();
+        magnifier.style.left = `${event.clientX - stageBounds.left - lensBounds.width / 2}px`;
+        magnifier.style.top = `${event.clientY - stageBounds.top - lensBounds.height / 2}px`;
+        magnifierContext.clearRect(0, 0, lensSize, lensSize);
+        if (rotated) {
+          magnifierContext.save();
+          magnifierContext.translate(lensSize / 2, lensSize / 2);
+          magnifierContext.rotate(Math.PI);
+          magnifierContext.drawImage(artwork, cropX, cropY, sourceWidth, sourceHeight, -lensSize / 2, -lensSize / 2, lensSize, lensSize);
+          magnifierContext.restore();
+        } else {
+          magnifierContext.drawImage(artwork, cropX, cropY, sourceWidth, sourceHeight, 0, 0, lensSize, lensSize);
+        }
+        magnifier.classList.add("is-visible");
+      }
+
+      document.querySelector("#previousPage").addEventListener("click", () => setPage(currentPage - (narrowView.matches ? 1 : 2)));
+      document.querySelector("#nextPage").addEventListener("click", () => setPage(currentPage + (narrowView.matches ? 1 : 2)));
+      readMode.addEventListener("click", () => setView("read"));
+      sheetMode.addEventListener("click", () => setView("sheet"));
+      musicButton.addEventListener("click", () => {
+        setMusicOpen(musicControl.dataset.open !== "true");
+      });
+      musicControl.addEventListener("pointerenter", () => { if (hoverAvailable.matches) setMusicOpen(true); });
+      musicControl.addEventListener("pointerleave", () => { if (hoverAvailable.matches) setMusicOpen(false); });
+      musicControl.addEventListener("focusin", () => { if (hoverAvailable.matches) setMusicOpen(true); });
+      musicControl.addEventListener("focusout", (event) => {
+        if (hoverAvailable.matches && !musicControl.contains(event.relatedTarget)) setMusicOpen(false);
+      });
+      document.addEventListener("click", (event) => { if (!musicControl.contains(event.target)) setMusicOpen(false); });
+      backgroundToggle.addEventListener("click", () => {
+        const tone = document.body.dataset.tone === "dark" ? "light" : "dark";
+        document.body.dataset.tone = tone;
+        backgroundToggle.setAttribute("aria-label", tone === "dark" ? "Đổi sang nền sáng" : "Đổi sang nền tối");
+      });
+      document.querySelector("#closeDialog").addEventListener("click", () => detailDialog.close());
+      detailDialog.addEventListener("click", (event) => { if (event.target === detailDialog) detailDialog.close(); });
+      document.querySelector("#stage").addEventListener("click", (event) => {
+        const page = event.target.closest(".zine-page, .sheet-cell");
+        if (page) showPageDetail(Number(page.dataset.page));
+      });
+      stage.addEventListener("pointermove", updateMagnifier);
+      stage.addEventListener("pointerleave", hideMagnifier);
+      detailDialog.addEventListener("close", hideMagnifier);
+      document.addEventListener("keydown", (event) => {
+        if (detailDialog.open || event.altKey || event.ctrlKey || event.metaKey) return;
+        if (event.key === "ArrowLeft") setPage(currentPage - (narrowView.matches ? 1 : 2));
+        if (event.key === "ArrowRight") setPage(currentPage + (narrowView.matches ? 1 : 2));
+      });
+      narrowView.addEventListener("change", () => {
+        currentPage = narrowView.matches ? currentPage : currentPage - (currentPage % 2);
+        renderPages();
+      });
+
       renderPages();
-    });
-
-    renderPages();
-  </script>
-</body>
+    </script>
+  </body>
 </html>
